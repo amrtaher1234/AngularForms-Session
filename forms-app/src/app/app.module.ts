@@ -8,6 +8,7 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
 import { ReactiveDrivenFormComponent } from './components/reactive-driven-form/reactive-driven-form.component';
 import { DynamicFormsComponent } from './components/dynamic-forms/dynamic-forms.component';
 import { ResultComponent } from './components/result/result.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ResultComponent } from './components/result/result.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

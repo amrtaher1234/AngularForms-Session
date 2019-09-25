@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateDrivenFormComponent implements OnInit {
 
   constructor() { }
-
+  model = {};
   ngOnInit() {
   }
-
+  onSubmit(form, userNameRef) {
+    console.log(form, userNameRef);
+  }
 }
